@@ -1949,8 +1949,8 @@ namespace video {
   }
 
   input::touch_port_t make_port(platf::display_t *display, const config_t &config) {
-    float wd = display->width;
-    float hd = display->height;
+    float wd = 1920;
+    float hd = 1080;
 
     float wt = config.width;
     float ht = config.height;
@@ -1965,8 +1965,8 @@ namespace video {
 
     return input::touch_port_t {
       {
-        display->offset_x,
-        display->offset_y,
+        0,
+        0,
         config.width,
         config.height,
       },
