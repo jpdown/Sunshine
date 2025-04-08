@@ -1970,7 +1970,7 @@ namespace video {
         config.width,
         config.height,
       },
-      display->env_width,
+      display->env_width, 
       display->env_height,
       offsetX,
       offsetY,
